@@ -1,12 +1,15 @@
 package controllers
 
 import play.api.mvc._
+import play.api.libs.json._
+import service.AbstractService
+import models.Abstract
 
 /**
  * Abstracts controller.
  * Manages HTTP request logic for abstracts.
  */
-object Abstracts extends Controller with OwnerManager {
+object Abstracts extends Controller {
 
   /**
    * Create a new abstract.
